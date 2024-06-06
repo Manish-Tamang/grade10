@@ -1,0 +1,106 @@
+html,
+body {
+  @apply motion-safe:scroll-smooth bg-background accent-accent;
+}
+
+html {
+  margin-left: calc(100vw - 100%);
+}
+
+body {
+  @apply text-xs overflow-x-hidden;
+  @apply flex flex-col;
+}
+
+button {
+  @apply cursor-default font-manrope;
+}
+
+a {
+  @apply transition-colors cursor-pointer;
+  @apply underline decoration-divider;
+  @apply hocus:decoration-accent-dark;
+}
+
+a,
+a * {
+  @apply decoration-2 underline-offset-2;
+}
+
+figure {
+  @apply block relative m-0;
+}
+
+figure figcaption {
+  @apply text-3xs text-center my-2.5;
+}
+
+input[type='text'],
+input[type='email'] {
+  @apply appearance-none;
+}
+
+input[type='checkbox'] {
+  @apply align-middle;
+}
+
+::selection {
+  @apply bg-brand-500/25 dark:bg-brand-300/25;
+}
+::placeholder {
+  @apply text-tertiary-txt opacity-100;
+}
+:-ms-input-placeholder {
+  @apply text-tertiary-txt opacity-100;
+}
+::-ms-input-placeholder {
+  @apply text-tertiary-txt opacity-100;
+}
+
+/* == Custom Scrollbar Colors == */
+* {
+  scrollbar-color: var(--color-accent) var(--color-background);
+}
+*::-webkit-scrollbar-track {
+  background: var(--color-accent);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-background);
+  border-radius: 20px;
+  border: 3px solid var(--color-accent);
+}
+
+*:focus {
+  outline: 2px dashed var(--color-secondary-txt);
+  outline-offset: 0.25rem;
+}
+
+/* Fix image border in Safari for lazy loading images. See https://nextjs.org/docs/api-reference/next/future/image#known-browser-bugs */
+@media not all and (min-resolution: 0.001dpcm) {
+  img[loading='lazy'] {
+    clip-path: inset(0.5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    transition-delay: -1ms !important;
+  }
+}
+
+body main,
+body section,
+body article,
+body article [id] {
+  @apply scroll-mt-20 tablet-sm:scroll-mt-24 tablet-md:scroll-mt-28;
+}
+
+span[role='img'][aria-label] {
+  @apply text-primary-txt;
+}

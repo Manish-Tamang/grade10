@@ -1,0 +1,45 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
+  }
+  * {
+    @apply m-0;
+    font: inherit;
+  }
+  html,
+  body {
+    @apply min-h-dvh;
+    font-size: 100%;
+    height: stretch;
+  }
+  body {
+    @apply isolate antialiased leading-normal;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    @apply block h-auto max-w-full;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply break-words text-balance;
+  }
+  p {
+    @apply text-pretty;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+  }
+}

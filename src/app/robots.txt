@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /static/audio/
+Disallow: /static/fonts/
+Disallow: /static/js/
+Disallow: /frames/
+Disallow: /share/
+Sitemap: https://grade10.vercel.app/sitemap.xml
+Host: https://grade10.vercel.app
