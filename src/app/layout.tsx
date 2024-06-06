@@ -1,6 +1,6 @@
 import '@/styles/globals.scss';
 import { type PropsWithChildren } from 'react';
-
+import { Analytics } from "@vercel/analytics/react"
 import { Main } from '@/components/atoms/main';
 import { Footer } from '@/components/molecules/footer';
 import { Providers } from '@/providers';
@@ -53,7 +53,7 @@ export default function RootLayout(props: PropsWithChildren) {
       </head>
       <body>
         <Providers>
-          <Main>{props.children}</Main>
+          <Main>{props.children} <Analytics /></Main>
           <Footer />
         </Providers>
       </body>
