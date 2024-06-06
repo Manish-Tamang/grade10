@@ -53,9 +53,10 @@ export default function RootLayout(props: PropsWithChildren) {
       </head>
       <body>
         <Providers>
-          <Main>{props.children} <Analytics /></Main>
+          <Main>{props.children}</Main>
           <Footer />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
