@@ -5,8 +5,6 @@ import { SocialLinks } from '@/components/molecules/social-links';
 import { getColoredTextClasses } from '@/utils/colored-text';
 import { createMetadata } from '@/utils/metadata';
 
-import Photo from './photo';
-
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
