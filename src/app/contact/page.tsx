@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import useWeb3Forms from '@web3forms/react';

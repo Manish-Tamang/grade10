@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "bun download-themes && next telemetry disable && bun velite build && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "setup": "node ./scripts/setup.mjs && bun download-themes",

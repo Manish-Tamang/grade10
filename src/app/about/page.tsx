@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { Link } from '@/components/atoms/link';
 import { Section } from '@/components/atoms/section';
 import { SocialLinks } from '@/components/molecules/social-links';
