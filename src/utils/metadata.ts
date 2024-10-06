@@ -14,11 +14,11 @@ export const createMetadata = (data: {
     title,
     description,
     keywords,
-    authors: [{ name: 'Jahir Fiquitiva', url: 'https://grade10.vercel.app' }],
+    authors: [{ name: 'Manish Tamang', url: 'https://prashantiacademy-schooldiary.vercel.app/' }],
     openGraph: {
       title,
       description,
-      url: exactUrl || 'https://grade10.vercel.app',
+      url: exactUrl || 'https://prashantiacademy-schooldiary.vercel.app/',
       siteName: title,
       locale: 'en_US',
       type: 'website',
@@ -31,9 +31,9 @@ export const createMetadata = (data: {
       site: '@Manishtamangxyz',
     },
     verification: {
-      google: 'lJwL3cKpjX_Eqp6yEY4hsydJazQl85xv29ZUmEg4oEE',
+      google: 'hOFWk3yZv8bXENbTkzzu4iICQAJIxm9lvVlwtpD5XOw',
     },
-    metadataBase: new URL('https://grade10.vercel.app'),
+    metadataBase: new URL('https://prashantiacademy-schooldiary.vercel.app/'),
   };
   if (imageURL && Boolean(imageURL)) {
     const image = {

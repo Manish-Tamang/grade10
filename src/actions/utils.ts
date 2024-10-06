@@ -9,5 +9,5 @@ const {
 
 export const canRunAction =
   (NODE_ENV === PROD_ENV || VERCEL_ENV === PROD_ENV) &&
-  VERCEL_GIT_REPO_OWNER === 'jahirfiquitiva' &&
-  VERCEL_GIT_REPO_SLUG === 'jahir.dev';
+  VERCEL_GIT_REPO_OWNER === 'Manish-tamang' &&
+  VERCEL_GIT_REPO_SLUG === 'manishtamang';

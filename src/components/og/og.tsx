@@ -11,8 +11,8 @@ const baseUrl =
     : process.env.VERCEL_ENV === 'preview'
       ? process.env.VERCEL_URL
         ? `https://${process.env.VERCEL_URL}`
-        : 'https://grade10.vercel.app'
-      : 'https://grade10.vercel.app';
+        : 'https://prashantiacademy-schooldiary.vercel.app/'
+      : 'https://prashantiacademy-schooldiary.vercel.app/';
 
 interface OgImageProps {
   path?: PathName;

@@ -11,9 +11,7 @@ export const Intro = () => {
   return (
     <Section id={'intro'} className={'gap-6'}>
       <div
-        className={
-          'flex flex-col gap-5 tablet-sm:block tablet-sm:space-y-4'
-        }
+        className={'flex flex-col gap-5 tablet-sm:block tablet-sm:space-y-4'}
       >
         <h1 className={'flex flex-col gap-1 tablet-sm:!-mt-2'}>
           <p
@@ -28,27 +26,29 @@ export const Intro = () => {
           </p>
           <SubHeader>
             <span>
-              You&apos;re welcome to <Name>School Dairy</Name>
+              You&apos;re welcome to <Name>School Dairy 2080 Batch</Name>
             </span>
           </SubHeader>
         </h1>
         <p className={'text-pretty flex flex-col gap-2 w-full'}>
           <span>
-            This Page is Created by student of Grade 10 of Prashanti Academy
-            Batch 2080 for recalling all those memory.
+            This site is created by Manish Tamang, a proud graduate of Prashanti
+            Academy, celebrating our unforgettable journey in the 2080 Batch.
           </span>
           <span>
-            In order to preserve all those memories with friends, teacher and
-            School, this page has been established under NextJS.
+            In an effort to preserve the cherished memories of our time with
+            friends, teachers, and the school community, this gallery has been
+            established. Here, you will find a collection of photographs that
+            capture the special moments we shared.
           </span>
           <span>
-            All the images are fetched from{' '}
+            All images are sourced from{' '}
             <a href={'https://schooldiary.vercel.app'}>
               schooldiary.vercel.app
             </a>{' '}
-            (An open source Gallery for Grade 10 2080 Batch of Prashanti Academy
-            developed by <a href={'https://manishtamang.xyz/'}>Manish Tamang</a>
-            ).
+            , an open-source gallery developed by Manish Tamang specifically for
+            the Grade 10 2080 Batch of Prashanti Academy. Join us in reliving
+            those beautiful memories!
           </span>
         </p>
       </div>
@@ -60,7 +60,7 @@ export const Intro = () => {
       >
         <LinkButton
           title={'About Developer'}
-          href={'https://manishtamang.xyz'}
+          href={'https://www.manishtamang.com'}
           className={cx(
             'pr-3.5',
             'justify-center max-mobile-lg:w-full',

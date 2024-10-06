@@ -40,7 +40,7 @@ const defaultNextConfig = {
     remotePatterns: [
       { hostname: 'i.scdn.co' },
       { hostname: 'spotify.com' },
-      { hostname: 'jahir.dev' },
+      { hostname: 'prashantiacademy-schooldiary.vercel.app' },
       { hostname: 'unavatar.io' },
       { hostname: 'source.boringavatars.com' },
       { hostname: 'raw.githubusercontent.com' },
@@ -54,7 +54,7 @@ const defaultNextConfig = {
     formats: ['image/avif', 'image/webp'],
   },
   headers: () => appHeaders,
-  redirects: () => redirects,
+
   // webpack: (config) => {
   //   config.plugins.push(new VeliteWebpackPlugin());
   //   return config;

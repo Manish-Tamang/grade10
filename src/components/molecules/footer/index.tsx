@@ -11,7 +11,7 @@ export const Footer = () => {
     <StyledFooter>
       <Details>
         <FooterLink
-          title="Baje Codes"
+          title="Gole Codes"
           href="/"
           className={cx(
             'self-start',
@@ -21,7 +21,7 @@ export const Footer = () => {
             'dark:hocus:decoration-brand-300',
           )}
         >
-          <span className="text-accent">© Baje Codes</span>
+          <span className="text-accent">© Gole Codes</span>
         </FooterLink>
         <Description>
           If any of the site&apos;s content is harming or violating any rules or

@@ -41,6 +41,6 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts",
-    "/Users/jahir/dev/jahir/website/.next/types/**/*.ts"
+    
   ]
 }

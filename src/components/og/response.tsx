@@ -1,11 +1,10 @@
-// src/components/og/response.tsx
 import type { SatoriOptions } from 'next/dist/compiled/@vercel/og/satori';
-// import { ImageResponse } from 'next/og';
+import { ImageResponse } from 'next/og';
 
 import { config } from '@/utils/og';
 
 import type { PathName } from './logo-title';
-// import { OgImage } from './og';
+import { OgImage } from './og';
 
 const getManropeFont = async (): Promise<
   SatoriOptions['fonts'] | undefined
@@ -33,17 +32,16 @@ export const getOgImage = async (
   hero?: string | null,
 ) => {
   const actualPath = (path || '').toLowerCase() as PathName;
-  let actualHero = hero || '/class10.jpg';
+  let actualHero = hero || '/class10.jpeg';
   if (actualHero.startsWith('/')) actualHero = actualHero.substring(1);
 
-  // Removing ImageResponse related code
-  return {
-    path: actualPath,
-    title,
-    hero: actualHero,
-    width: config.size.width,
-    height: config.size.height,
-    emoji: 'fluent',
-    fonts: await getManropeFont(),
-  };
+  return new ImageResponse(
+    <OgImage path={actualPath} title={title} hero={actualHero} />,
+    {
+      width: config.size.width,
+      height: config.size.height,
+      emoji: 'fluent',
+      fonts: await getManropeFont(),
+    },
+  );
 };
